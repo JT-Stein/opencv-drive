@@ -12,13 +12,11 @@ detector = cv2.CascadeClassifier('cars.xml')
 gray = (128,128,128)
 red = (155,0,0)
 blue = (0,0,155)
-number = input("Video Value: ")
+number = input("Video Value (1 or 2): ")
 if number == 1:
   cap = cv2.VideoCapture('cars.mp4')
 if number == 2:
   cap = cv2.VideoCapture('cars1.mp4')
-if number == 3:
-  cap = cv2.VideoCapture('IMG_1174.MOV')
 cv2.useOptimized()
 clock_value = 2
 print_value = 0
